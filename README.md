@@ -1,16 +1,58 @@
-# React + Vite
+# JPT MOPA 100W Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplikacja webowa służąca jako symulator i kalkulator parametrów procesu laserowego dla lasera światłowodowego JPT MOPA 100W (Model: YDFLP-E-100-M7-M-R).
 
-Currently, two official plugins are available:
+## 🚀 Funkcjonalności
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Kalkulator parametrów fizycznych:** Oblicza moc średnią, energię impulsu, moc szczytową, fluencję, irradiancję oraz nakładanie się impulsów (overlap).
+- **Symulacja parametrów:** Pozwala na eksperymentowanie z ustawieniami takimi jak moc, częstotliwość, szerokość impulsu, prędkość, czy interwał linii.
+- **Presety:** Wbudowana baza ustawień dla różnych materiałów i zastosowań.
+- **Wizualizacja:** Graficzna reprezentacja procesu laserowego.
+- **Wykresy:** Wykresy częstotliwości odcięcia (Cutoff Frequency).
 
-## React Compiler
+## 🛠️ Technologie
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Projekt został zbudowany przy użyciu nowoczesnych technologii webowych:
 
-## Expanding the ESLint configuration
+- [React 19](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Tailwind CSS 4](https://tailwindcss.com/)
+- [Lucide React](https://lucide.dev/) (ikony)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Instalacja i uruchomienie
+
+Aby uruchomić projekt lokalnie, wykonaj następujące kroki:
+
+1.  Sklonuj repozytorium:
+
+    ```bash
+    git clone <adres-repozytorium>
+    cd fiber-laser-app
+    ```
+
+2.  Zainstaluj zależności:
+
+    ```bash
+    npm install
+    ```
+
+3.  Uruchom serwer deweloperski:
+    ```bash
+    npm run dev
+    ```
+
+Aplikacja będzie dostępna pod adresem wskazanym w terminalu (zazwyczaj `http://localhost:5173`).
+
+## 🏗️ Budowanie wersji produkcyjnej
+
+Aby zbudować aplikację do wdrożenia na produkcję:
+
+```bash
+npm run build
+```
+
+Pliki wynikowe znajdą się w katalogu `dist`.
+
+## 📄 Licencja
+
+Projekt stworzony na potrzeby własne / edukacyjne.
