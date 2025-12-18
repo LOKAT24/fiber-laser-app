@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="#0f172a" stroke="#3b82f6" stroke-width="2" />
+  
+  <!-- Laser Nozzle -->
+  <path d="M35 15 L65 15 L60 45 L40 45 Z" fill="#cbd5e1" stroke="#475569" stroke-width="2" />
+  <rect x="38" y="10" width="24" height="5" fill="#64748b" />
+  
+  <!-- Laser Beam -->
+  <path d="M48 45 L49 85 L51 85 L52 45 Z" fill="#ef4444" stroke="#ef4444" stroke-width="1">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="0.1s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Spark/Impact Point -->
+  <circle cx="50" cy="85" r="3" fill="#fbbf24">
+    <animate attributeName="r" values="2;4;2" dur="0.2s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Spark Rays -->
+  <g stroke="#fbbf24" stroke-width="2" stroke-linecap="round">
+    <line x1="50" y1="85" x2="40" y2="92" />
+    <line x1="50" y1="85" x2="60" y2="92" />
+    <line x1="50" y1="85" x2="50" y2="95" />
+    <line x1="50" y1="85" x2="38" y2="80" />
+    <line x1="50" y1="85" x2="62" y2="80" />
+  </g>
+</svg>
